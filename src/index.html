@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Hello World!</title>
+  <link rel="stylesheet" href="index.css">
+
+</head>
+
+
+<body>
+
+  <div id='ayats'>
+    <!-- <div id='ayat'>
+      <audio id="audio_1" controls>
+        <source src="./assets/1.mp3">
+        </source>
+      </audio>
+
+      <div id='sentence'>
+        <!-- <pre id="word">
+        A: <span id='ts1.0'>بِ</span><span id='ts5'>س</span><span id='ts8'>مِ</span> 
+      </pre> -->
+      <!-- </div> -->
+    <!-- </div> -->
+  </div>
+
+
+  <!-- <script>
+    var spns = document.getElementsByTagName("span");
+    var audi = document.getElementById("audio_1");
+
+    audi.addEventListener("timeupdate", f1);
+
+    function f1() {
+      var i;
+      for (i = 0; i < spns.length; i++) {
+        var time = Number(spns[i].id.slice(2));
+        if (time < audi.currentTime) {
+          if (i > 0) spns[i - 1].style.backgroundColor = "white";
+          spns[i].style.backgroundColor = "red";
+        }
+      }
+    }
+  </script> -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="audio.js"></script>
+</body>
+
+</html>
