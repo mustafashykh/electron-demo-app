@@ -1,0 +1,89 @@
+
+@import url('https://fonts.googleapis.com/css?family=Amiri&display=swap');
+
+body{
+	font-family: 'Amiri', serif;
+	font-size: 28px;
+	font-weight: 600;
+}
+ul{
+	padding: 0;
+	margin: 0;
+}
+ul li{
+	list-style: none;
+}
+img{
+	max-width: 100%;
+}
+
+.page-frame {
+    background: url(../images/fram.svg) no-repeat;
+    width: 500px;
+    background-position: top center;
+    margin: 20px auto;
+    padding: 30px;
+}
+.inner {
+	background-color: #fffde8;
+	border: 1px solid #000;
+	overflow: hidden;
+}
+.inner-header {
+	display: flex;
+	padding: 5px;
+	border-bottom: 1px solid #000;
+}
+.inner-header div {
+	flex: 1;
+	background-color: #c9242b;
+	padding: 10px 15px;
+	text-align: center;
+	color: #fff;
+}
+.inner-header div.right-title {
+	max-width: 35%;
+	padding-left: 24px;
+	text-align: right;
+	background-color: #00944d;
+	position: relative;
+}
+.inner-header div.right-title:after {
+	content: '';
+	width: 0;
+	height: 0;
+	border-left: 22px solid transparent;
+	border-right: 22px solid transparent;
+	border-top: 32px solid #fffde8;
+	position: absolute;
+	left: -22px;
+	top: 0;
+}
+.inner-header div.right-title:before {
+	content: '';
+	width: 0;
+	height: 0;
+	border-left: 22px solid transparent;
+	border-right: 22px solid transparent;
+	border-bottom: 32px solid #fffde8;
+	position: absolute;
+	left: -22px;
+	bottom : 0;
+}
+.inner-body ul li {
+	padding: 2px 15px;
+	text-align: right;
+	border-bottom: 1px solid #000;
+}
+
+.inner-body ul li p {
+	position: relative;
+	top: 10px;
+}
+
+.inner-body ul li:last-child {
+	border-bottom: 0
+}
+.inner-body p {
+	cursor: pointer;
+}
