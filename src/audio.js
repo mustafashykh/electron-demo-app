@@ -1,6 +1,7 @@
 $(document).ready(function () {
 	var audioElement = document.createElement('audio');
 	audioElement.setAttribute('src', `assets/audio.mp3`);
+	
 	$.ajax({url: "./assets/timestamps.json"}).done((res) => {
 		var lineTimes = [0,71,147]
 		// console.log(res.timestamps)
@@ -12,7 +13,7 @@ $(document).ready(function () {
 			var elem = document.createElement('p')
 			elem.setAttribute('id', 'ayat_')
 			elem.setAttribute('key', i+1)
-			elem.style.color = '#C0C0C0';
+			elem.style.color = '#000';
 
 	
 			$.each(characters, function (j, el) {
@@ -64,7 +65,7 @@ $(document).ready(function () {
 					for (i = 0; i < spns.length; i++) {
 						if (parseFloat(audioElement.currentTime) >= parseFloat(spns[i].id.slice(2))) {
 							// console.log(spns[i])
-							spns[i].style.color = "#000000";
+							spns[i].style.color = "red";
 						}
 					}
 					if(key != 3){
@@ -85,7 +86,7 @@ $(document).ready(function () {
 					for (i = 0; i < spns.length; i++) {
 						if (parseFloat(audioElement.currentTime) >= parseFloat(spns[i].id.slice(2))) {
 							// console.log(spns[i])
-							spns[i].style.color = "#C0C0C0";
+							spns[i].style.color = "#000";
 						}
 					}
 					$('audio').remove()
